@@ -1,9 +1,12 @@
 <mxfile host="app.diagrams.net">
   <diagram name="Page-1" id="GfUkWVIgrGLzlWxMwGBu">
-    <mxGraphModel>
+    <mxGraphModel dx="805" dy="567" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="UUvIqveAK4qMH45Avgpy-3" parent="1" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;MiniInstagram&lt;br&gt;&lt;/h1&gt;&lt;div&gt;- Micro services distributed APP&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="180" x="40" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
