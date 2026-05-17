@@ -7,6 +7,147 @@
         <mxCell id="UUvIqveAK4qMH45Avgpy-3" parent="1" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;MiniInstagram&lt;br&gt;&lt;/h1&gt;&lt;div&gt;- Micro services distributed APP&lt;/div&gt;" vertex="1">
           <mxGeometry height="80" width="180" x="40" as="geometry" />
         </mxCell>
+        <mxCell id="UUvIqveAK4qMH45Avgpy-4" parent="1" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;1. Functional Requirements&lt;/font&gt;&lt;/h1&gt;&lt;div&gt;&lt;font&gt;&lt;font style=&quot;&quot;&gt;-&amp;nbsp;&lt;/font&gt;&lt;font style=&quot;&quot;&gt;user should be able to create account / signin&lt;/font&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font&gt;- user should be able to follow other users&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font&gt;- user should be to see posts of followee&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font&gt;- user should be able to comments on post.&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font&gt;- user should be able to like post&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font&gt;- user should be able to post&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;font&gt;-&lt;/font&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="140" width="275" x="40" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="UUvIqveAK4qMH45Avgpy-5" parent="1" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;Non Functional Requirements&lt;/font&gt;&lt;/h1&gt;&lt;div&gt;&lt;font&gt;&lt;font style=&quot;&quot;&gt;- 1B Daily active users&lt;/font&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font&gt;&lt;font style=&quot;&quot;&gt;- 100 posts/sec&lt;/font&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;- CAP - Availability &amp;gt;&amp;gt; consistency&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;font&gt;-&lt;/font&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="140" width="275" x="350" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="UUvIqveAK4qMH45Avgpy-6" parent="1" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;2 Core Entities&lt;/font&gt;&lt;/h1&gt;&lt;div&gt;&lt;font&gt;&lt;font style=&quot;&quot;&gt;- User&lt;/font&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font&gt;&lt;font style=&quot;&quot;&gt;- Post&lt;/font&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font&gt;&lt;font style=&quot;&quot;&gt;- Comments&lt;/font&gt;&lt;/font&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="100" width="220" x="40" y="230" as="geometry" />
+        </mxCell>
+        <mxCell id="UUvIqveAK4qMH45Avgpy-7" parent="1" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;API Creation&lt;/font&gt;&lt;/h1&gt;&lt;div&gt;&lt;font&gt;&lt;font style=&quot;&quot;&gt;- POST&amp;nbsp; /v1/user/register {details}&lt;/font&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font&gt;&lt;font style=&quot;&quot;&gt;- POST&amp;nbsp; /v1/follow/{user1}/{user2}&lt;/font&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font&gt;&lt;font style=&quot;&quot;&gt;- GET&amp;nbsp; &amp;nbsp; /v1/posts {userId in Header} : pagination -&amp;gt; List&amp;lt;Post&amp;gt;&lt;/font&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font&gt;&lt;font style=&quot;&quot;&gt;- POST&amp;nbsp; /v1/comment&amp;nbsp;&lt;/font&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font&gt;&lt;font style=&quot;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; { comment body} postId in header&lt;/font&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font&gt;&lt;font style=&quot;&quot;&gt;- POST /v1/like {userId, postId}&lt;/font&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font&gt;&lt;font style=&quot;&quot;&gt;- POST&amp;nbsp; /v1/post {userId and content}&lt;/font&gt;&lt;/font&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="180" width="370" x="360" y="230" as="geometry" />
+        </mxCell>
+        <mxCell id="UUvIqveAK4qMH45Avgpy-8" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;b&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;3. HLD&lt;/font&gt;&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="60" x="40" y="400" as="geometry" />
+        </mxCell>
+        <mxCell id="UUvIqveAK4qMH45Avgpy-9" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" value="Actor" vertex="1">
+          <mxGeometry height="40" width="20" x="50" y="490" as="geometry" />
+        </mxCell>
+        <mxCell id="UUvIqveAK4qMH45Avgpy-10" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" value="Actor" vertex="1">
+          <mxGeometry height="40" width="20" x="50" y="620" as="geometry" />
+        </mxCell>
+        <mxCell id="UUvIqveAK4qMH45Avgpy-11" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" value="Actor" vertex="1">
+          <mxGeometry height="40" width="20" x="50" y="560" as="geometry" />
+        </mxCell>
+        <mxCell id="UUvIqveAK4qMH45Avgpy-12" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" value="Actor" vertex="1">
+          <mxGeometry height="40" width="20" x="50" y="680" as="geometry" />
+        </mxCell>
+        <mxCell id="UUvIqveAK4qMH45Avgpy-18" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="LD / API Gateway&lt;div&gt;- Routing&lt;/div&gt;&lt;div&gt;- Authentication&lt;/div&gt;&lt;div&gt;- Autherization&lt;/div&gt;" vertex="1">
+          <mxGeometry height="230" width="100" x="150" y="500" as="geometry" />
+        </mxCell>
+        <mxCell id="UUvIqveAK4qMH45Avgpy-19" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="user-svc" vertex="1">
+          <mxGeometry height="30" width="90" x="360" y="510" as="geometry" />
+        </mxCell>
+        <mxCell id="UUvIqveAK4qMH45Avgpy-20" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="post-svc" vertex="1">
+          <mxGeometry height="30" width="90" x="360" y="610" as="geometry" />
+        </mxCell>
+        <mxCell id="UUvIqveAK4qMH45Avgpy-21" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="get-post-svc" vertex="1">
+          <mxGeometry height="30" width="90" x="360" y="565" as="geometry" />
+        </mxCell>
+        <mxCell id="UUvIqveAK4qMH45Avgpy-22" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="comment-svc" vertex="1">
+          <mxGeometry height="30" width="90" x="360" y="660" as="geometry" />
+        </mxCell>
+        <mxCell id="UUvIqveAK4qMH45Avgpy-23" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="like-svc" vertex="1">
+          <mxGeometry height="30" width="90" x="360" y="700" as="geometry" />
+        </mxCell>
+        <mxCell id="UUvIqveAK4qMH45Avgpy-25" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;entryX=-0.045;entryY=0.326;entryDx=0;entryDy=0;entryPerimeter=0;" target="UUvIqveAK4qMH45Avgpy-18" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="80" y="520" as="sourcePoint" />
+            <mxPoint x="130" y="485" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UUvIqveAK4qMH45Avgpy-26" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.435;entryDx=0;entryDy=0;entryPerimeter=0;" target="UUvIqveAK4qMH45Avgpy-18" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="70" y="595" as="sourcePoint" />
+            <mxPoint x="136" y="650" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UUvIqveAK4qMH45Avgpy-27" edge="1" parent="1" source="UUvIqveAK4qMH45Avgpy-10" style="endArrow=classic;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="90" y="640" as="sourcePoint" />
+            <mxPoint x="140" y="620" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UUvIqveAK4qMH45Avgpy-28" edge="1" parent="1" source="UUvIqveAK4qMH45Avgpy-12" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.696;entryDx=0;entryDy=0;entryPerimeter=0;" target="UUvIqveAK4qMH45Avgpy-18" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="120" y="680" as="sourcePoint" />
+            <mxPoint x="186" y="735" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UUvIqveAK4qMH45Avgpy-31" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="260" y="590" as="sourcePoint" />
+            <mxPoint x="340" y="540" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UUvIqveAK4qMH45Avgpy-32" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="260" y="610" as="sourcePoint" />
+            <mxPoint x="350" y="590" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UUvIqveAK4qMH45Avgpy-33" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="260" y="630" as="sourcePoint" />
+            <mxPoint x="350" y="630" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UUvIqveAK4qMH45Avgpy-34" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="260" y="660" as="sourcePoint" />
+            <mxPoint x="350" y="670" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UUvIqveAK4qMH45Avgpy-35" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="260" y="690" as="sourcePoint" />
+            <mxPoint x="350" y="720" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UUvIqveAK4qMH45Avgpy-36" parent="1" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" value="userDB" vertex="1">
+          <mxGeometry height="80" width="60" x="560" y="470" as="geometry" />
+        </mxCell>
+        <mxCell id="UUvIqveAK4qMH45Avgpy-37" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="450" y="520" as="sourcePoint" />
+            <mxPoint x="550" y="510" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UUvIqveAK4qMH45Avgpy-38" parent="1" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" value="postDB" vertex="1">
+          <mxGeometry height="80" width="60" x="565" y="565" as="geometry" />
+        </mxCell>
+        <mxCell id="UUvIqveAK4qMH45Avgpy-39" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="460" y="580" as="sourcePoint" />
+            <mxPoint x="560" y="600" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UUvIqveAK4qMH45Avgpy-40" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="460" y="630" as="sourcePoint" />
+            <mxPoint x="550" y="620" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UUvIqveAK4qMH45Avgpy-41" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="- userId&lt;div&gt;- name&lt;/div&gt;&lt;div&gt;- email&lt;/div&gt;&lt;div&gt;-password&lt;/div&gt;" vertex="1">
+          <mxGeometry height="30" width="60" x="625" y="470" as="geometry" />
+        </mxCell>
+        <mxCell id="UUvIqveAK4qMH45Avgpy-42" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="- commentId&lt;div&gt;- name&lt;/div&gt;&lt;div&gt;- email&lt;/div&gt;&lt;div&gt;-password&lt;/div&gt;" vertex="1">
+          <mxGeometry height="30" width="60" x="650" y="590" as="geometry" />
+        </mxCell>
+        <mxCell id="UUvIqveAK4qMH45Avgpy-43" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="User" vertex="1">
+          <mxGeometry height="110" width="140" x="200" y="320" as="geometry" />
+        </mxCell>
+        <mxCell id="UUvIqveAK4qMH45Avgpy-44" parent="UUvIqveAK4qMH45Avgpy-43" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="userId" vertex="1">
+          <mxGeometry height="30" width="140" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="UUvIqveAK4qMH45Avgpy-46" parent="UUvIqveAK4qMH45Avgpy-43" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="email" vertex="1">
+          <mxGeometry height="20" width="140" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="UUvIqveAK4qMH45Avgpy-45" parent="UUvIqveAK4qMH45Avgpy-43" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="name" vertex="1">
+          <mxGeometry height="30" width="140" y="80" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
