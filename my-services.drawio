@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net">
   <diagram name="Page-1" id="GfUkWVIgrGLzlWxMwGBu">
-    <mxGraphModel dx="805" dy="567" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="619" dy="436" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -43,7 +43,7 @@
         <mxCell id="UUvIqveAK4qMH45Avgpy-20" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="post-svc" vertex="1">
           <mxGeometry height="30" width="90" x="360" y="610" as="geometry" />
         </mxCell>
-        <mxCell id="UUvIqveAK4qMH45Avgpy-21" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="get-post-svc" vertex="1">
+        <mxCell id="UUvIqveAK4qMH45Avgpy-21" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="post-svc" vertex="1">
           <mxGeometry height="30" width="90" x="360" y="565" as="geometry" />
         </mxCell>
         <mxCell id="UUvIqveAK4qMH45Avgpy-22" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="comment-svc" vertex="1">
